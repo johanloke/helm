@@ -9,3 +9,6 @@ helm fetch elastic/kibana
 #helm fetch elastic/kibana --version 7.9.3
 helm fetch traefik/traefik
 #helm fetch traefik/traefik --version  9.8.2
+helm fetch bitnami/redis
+#helm fetch bitnami/redis --version 11.2.3
+
