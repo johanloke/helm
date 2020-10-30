@@ -1,0 +1,18 @@
+# This config creates an IngressRoute to traffic via port 80 (web) or 443 (websecure) entrypoint
+# The route will match the default dashboard and api context.
+# When this setting is applied, it will allow localhost/dashboard or localhost:443/dashboard to access the dashboard.
+# If this setting is not enabled, then the only way is to access directly via localhost:9000 but remember to enable port.traefik.expose=true in values.yaml on traefik chart
+apiVersion: traefik.containo.us/v1alpha1
+kind: IngressRoute
+metadata:
+  name: dashboard
+spec:
+  entryPoints:
+    - web
+    - websecure
+  routes:
+    - match: Host(`localhost`) && (PathPrefix(`/dashboard`) || PathPrefix(`/api`))
+      kind: Rule
+      services:
+        - name: api@internal
+          kind: TraefikService

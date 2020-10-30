@@ -7,3 +7,5 @@ helm fetch elastic/elasticsearch
 #helm fetch elastic/elasticsearch --version 7.9.3
 helm fetch elastic/kibana
 #helm fetch elastic/kibana --version 7.9.3
+helm fetch traefik/traefik
+#helm fetch traefik/traefik --version  9.8.2

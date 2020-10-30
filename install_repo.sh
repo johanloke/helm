@@ -29,7 +29,7 @@ helm repo add jetstack         	https://charts.jetstack.io
 # Stable repo
 helm repo add stable           	https://charts.helm.sh/stable
 # Traefik
-helm repo add traefik          	https://containous.github.io/traefik-helm-chart
+helm repo add traefik           https://helm.traefik.io/traefik
 
 #To add a stable repository for helm
 helm repo update
