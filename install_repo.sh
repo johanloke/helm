@@ -5,7 +5,7 @@ helm repo list
 helm repo remove azure-marketplace
 helm repo remove bitnami
 helm repo remove codecentric
-helm repo remove dniel
+helm repo remove cowboysysop
 helm repo remove elastic
 helm repo remove jetstack
 helm repo remove stable
@@ -21,7 +21,7 @@ helm repo add bitnami          	https://charts.bitnami.com/bitnami
 # jenkins, keycloak, mailhog
 helm repo add codecentric      	https://codecentric.github.io/helm-charts
 # whoami
-helm repo add dniel            	https://dniel.github.io/charts/
+helm repo add cowboysysop       https://cowboysysop.github.io/charts/
 # Elasticsearch
 helm repo add elastic          	https://helm.elastic.co
 # cert-manager
